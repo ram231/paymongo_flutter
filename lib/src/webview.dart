@@ -5,7 +5,7 @@ import 'package:paymongo_sdk/paymongo_sdk.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
-enum PaymentStatus { success, failed, cancelled }
+import 'payment_status.dart';
 
 class PayMongoWebPayment extends StatefulWidget {
   final String url;
@@ -113,6 +113,7 @@ class PayMongoFlutter extends PayMongoSDK {
         link,
         forceWebView: true,
         forceSafariVC: true,
+        webOnlyWindowName: "_self",
       );
     }
     return false;
