@@ -1,3 +1,5 @@
-## [0.0.1] - TODO: Add release date.
+## [0.0.2] - Update dependencies
+- update paymongo_sdk dependency
+## [0.0.1] - Initial preview
 
-* TODO: Describe initial release.
+- Initial preview for paymongo flutter
